@@ -167,3 +167,7 @@ app.mount("/", WSGIMiddleware(flask_app))
 @flask_app.route("/")
 def index():
     return "hello"
+
+
+def serve():
+    uvicorn.run("local_git_lfs.main:app", host=args.host, port=args.port)
