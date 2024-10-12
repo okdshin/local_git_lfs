@@ -1,3 +1,4 @@
 aiofiles
 fastapi
+flask
 uvicorn[standard]
